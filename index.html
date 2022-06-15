@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="head">BMI healthy weight calculator</h1>
+    <h2 class="head-a">Use this calculator to check your body mass index (BMI) and find out if you're a healthy weight. Or you can use the read box on the right side to read more about BMI index on Wikipedia.</h2>
+
+    <div class="container">
+        <div class="box">
+          <h1>BMI Calculator</h1>
+          <div class="content">
+            <div class="input">
+              <label for="height">Height(cm)</label>
+              <input type="number" id="height">
+            </div>
+
+            <div class="input">
+              <label for="weight">Weight(kg)</label>
+              <input type="number" id="weight" value="">
+            </div>
+            <button id="calculate">Calculate BMI</button>
+          </div>
+          <div class="result">
+            <p>Your BMI is</p>
+            <div id="result">00.00</div>
+            <p class="comment"></p>
+          </div>
+        </div>
+      </div>
+
+      
+      <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">BMI</th>
+                <th scope="col">Weight status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+            </tr>
+            <tr>
+                <td>18.5 – 24.9</td>
+                <td>Healthy</td>
+            </tr>
+            <tr>
+                <td>25.0 – 29.9</td>
+                <td>Overweight</td>
+            </tr>
+            <tr>
+                <td>30.0 and above</td>
+                <td>Obese</td>
+            </tr>
+        </tbody>
+    </table>
+
+      <a href="https://en.wikipedia.org/wiki/Body_mass_index" target="_blank" class="link">WHAT IS BMI? <i class="fab fa-youtube"></i></a>
+
+      <script src="./script.js"></script>
+</body>
+</html>
